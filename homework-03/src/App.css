@@ -1,0 +1,36 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+img {
+  width: 250px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 24px;
+}
+button {
+  padding: 12px 20px;
+  margin: 5px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
