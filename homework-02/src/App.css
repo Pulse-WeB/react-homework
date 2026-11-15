@@ -1,0 +1,8 @@
+.order-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.order-wrapper div {
+  border: 2px solid red;
+  padding: 20px;
+}
