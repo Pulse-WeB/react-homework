@@ -1,0 +1,81 @@
+.light {
+  background-color: #ffffff;
+  color: #222222;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header,
+main,
+footer {
+  padding: 30px;
+}
+
+.theme-switcher {
+  padding: 10px 20px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.theme-switcher {
+  padding: 12px 24px;
+  background-color: #6366f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.theme-switcher:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.theme-switcher:active {
+  transform: translateY(0);
+}
+
+/* Кнопка в тёмной теме */
+.dark .theme-switcher {
+  background-color: #818cf8;
+  color: #111827;
+}
+
+.dark .theme-switcher:hover {
+  background-color: #a5b4fc;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #f5f6fa;
+  color: #252638;
+}
+
+#root {
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
