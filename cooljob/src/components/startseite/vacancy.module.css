@@ -1,0 +1,171 @@
+.vacancy {
+  background-color: #e4f2ff;
+  padding: 30px 0 110px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heading p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(141, 141, 141, 0.8);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 210px;
+  row-gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  padding: 40px 46px;
+  background-color: #fff;
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.category p,
+.location p,
+.company p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(141, 141, 141, 0.8);
+}
+
+.category p {
+  font-size: 16px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.body h4 {
+  max-width: 272px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.logoSony {
+  width: 60px;
+  height: auto;
+}
+
+.logoFacebook {
+  width: 70px;
+  height: auto;
+}
+
+.logoCola {
+  width: 60px;
+  height: auto;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+.more button {
+  padding: 20px 50px;
+  background-color: #274059;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+@media (max-width: 1480px) {
+  .grid {
+    column-gap: 40px;
+  }
+
+  .card {
+    padding: 32px 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+
+  .card {
+    min-height: 300px;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .vacancy {
+    padding: 8px 0 64px;
+  }
+
+  .wrapper {
+    gap: 28px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .card {
+    min-height: 0;
+  }
+
+  .body h4 {
+    font-size: 20px;
+  }
+
+  .more {
+    margin-top: 8px;
+  }
+
+  .more button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+.wrapper {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLeft {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.headerLeft nav {
+  display: flex;
+  gap: 52px;
+}
+.headerRight {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+.headerRight a {
+  font-weight: 400;
+}
+.headerRight button {
+  padding: 14px 13px;
+  background-color: #fff;
+}
+
+@media (max-width: 1480px) {
+  .headerLeft {
+    gap: 48px;
+  }
+
+  .headerLeft nav {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .headerLeft {
+    gap: 32px;
+  }
+
+  .headerLeft nav {
+    gap: 24px;
+  }
+
+  .headerRight {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "logo actions"
+      "nav nav";
+    align-items: center;
+    gap: 14px 16px;
+    padding: 16px 0;
+  }
+
+  .headerLeft {
+    display: contents;
+  }
+
+  .headerLeft img {
+    grid-area: logo;
+  }
+
+  .headerLeft nav {
+    grid-area: nav;
+    gap: 16px;
+  }
+
+  .headerLeft nav a {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .headerRight {
+    grid-area: actions;
+    justify-self: end;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+}
+button {
+  color: #274059;
+  font-size: 15px;
+  font-weight: 600;
+}

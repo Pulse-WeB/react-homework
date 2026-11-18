@@ -1,0 +1,98 @@
+.form {
+  display: flex;
+  align-items: stretch;
+  width: 1130px;
+  max-width: 100%;
+  height: 105px;
+  background-color: #fff;
+  box-shadow: 6px 5px 9px 0px #00000059;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 22px;
+  padding: 0 36px;
+}
+
+.field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000d9;
+}
+
+.field input::placeholder {
+  color: #a0a0a0;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.searchIcon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.locationIcon {
+  width: 18px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.divider {
+  width: 1px;
+  height: 26px;
+  align-self: center;
+  flex-shrink: 0;
+  background-color: #dfdfdf;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 213px;
+  padding: 0;
+  border: none;
+  background-color: #274059;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .form {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .field {
+    flex: none;
+    height: 64px;
+    padding: 0 20px;
+  }
+
+  .divider {
+    width: calc(100% - 40px);
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .submit {
+    width: 100%;
+    height: 64px;
+  }
+}
