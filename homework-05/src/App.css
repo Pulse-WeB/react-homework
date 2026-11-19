@@ -1,0 +1,211 @@
+.spotify {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 32px 24px;
+}
+
+.spotify__logo {
+  position: absolute;
+  top: 99px;
+  left: 35px;
+  width: 139.564px;
+  height: 44.3632px;
+  transform: rotate(180deg) scaleX(-1);
+  transform-origin: center;
+}
+
+.spotify__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 1100px);
+}
+
+.spotify__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.spotify__signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 31px;
+  padding: 33px 53.5px 38px 54px;
+  border: 3px solid #1ed760;
+  border-radius: 65px;
+}
+
+.socials__item--apple {
+  margin-right: 18px;
+}
+
+.socials__item--google {
+  margin-right: 14.54px;
+}
+
+.socials__link {
+  position: relative;
+  display: block;
+  padding: 0;
+  line-height: 0;
+  border-radius: 28px;
+  background: none;
+}
+
+.socials__icons {
+  position: relative;
+  display: block;
+}
+
+.socials__icon {
+  width: auto;
+  height: auto;
+}
+
+.socials__icon--hover {
+  position: absolute;
+  top: -15.3px;
+  left: -35.3px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.socials__link:hover .socials__icon:not(.socials__icon--hover),
+.socials__link:focus-visible .socials__icon:not(.socials__icon--hover) {
+  opacity: 0;
+}
+
+.socials__link:hover .socials__icon--hover,
+.socials__link:focus-visible .socials__icon--hover {
+  opacity: 1;
+}
+
+.socials__link:focus-visible {
+  outline: 2px solid #1ed760;
+  outline-offset: 6px;
+}
+
+@media (max-width: 1100px) {
+  .spotify__title {
+    font-size: clamp(2rem, 5.2vw, 3rem);
+    white-space: normal;
+    max-width: 12em;
+  }
+}
+
+@media (max-height: 760px) {
+  .spotify {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 168px;
+  }
+
+  .spotify__logo {
+    top: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .spotify {
+    align-items: center;
+    justify-content: center;
+    padding: 112px 20px 48px;
+  }
+
+  .spotify__logo {
+    top: 28px;
+    left: 20px;
+    width: 118px;
+    height: auto;
+  }
+
+  .spotify__signin {
+    margin-top: 24px;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .socials {
+    gap: 12px;
+    margin-top: 24px;
+    padding: 24px 22px 26px;
+    border-radius: 48px;
+  }
+
+  .socials__item--apple,
+  .socials__item--google {
+    margin-right: 0;
+  }
+
+  .socials__item--apple .socials__link,
+  .socials__item--google .socials__link {
+    width: 72px;
+    height: 72.74px;
+  }
+
+  .socials__item--x .socials__link {
+    width: 78.63px;
+    height: 72.83px;
+  }
+
+  .socials__icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(calc(72 / 97));
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 420px) {
+  .spotify {
+    padding: 104px 16px 40px;
+  }
+
+  .spotify__title {
+    font-size: 1.75rem;
+  }
+
+  .spotify__signin {
+    font-size: 22px;
+  }
+
+  .socials {
+    gap: 10px;
+    padding: 18px 14px 20px;
+    border-radius: 36px;
+  }
+
+  .socials__item--apple .socials__link,
+  .socials__item--google .socials__link {
+    width: 58px;
+    height: 58.6px;
+  }
+
+  .socials__item--x .socials__link {
+    width: 63.34px;
+    height: 58.67px;
+  }
+
+  .socials__icons {
+    transform: scale(calc(58 / 97));
+  }
+}
